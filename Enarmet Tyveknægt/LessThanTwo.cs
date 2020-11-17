@@ -8,7 +8,6 @@ namespace Enarmet_Tyveknægt
 {
     class LessThanTwo
     {
-        //YEs
         // Hex koder til farver
         public string red = "#ffaf2d2d";
         public string normal = "#798190";
