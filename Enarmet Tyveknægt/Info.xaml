@@ -1,0 +1,138 @@
+﻿<Window x:Class="Enarmet_Tyveknægt.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Enarmet_Tyveknægt"
+        mc:Ignorable="d"
+        Title="Information" Height="450" Width="600">
+    <Window.Resources>
+        <BitmapImage x:Key="infoting" UriSource="images\infoting.png"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition   Width="350"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="{StaticResource infoting}" Grid.Column="2"/>
+        <StackPanel Grid.Column="0">
+            <TextBlock
+                Text="Generel information"
+                FontSize="25"
+            />
+            <TextBlock
+                Text="Spilleren bestemmer selv hvad han vil satse."
+                FontSize="15"
+            />
+            <TextBlock
+                Text="Klik på loop symbolet for at auto-spille."
+                FontSize="15"
+            />
+            <TextBlock
+                Text="Klik på procent symbolet for at se chancer."
+                FontSize="15"
+            />
+            <TextBlock
+                Text="Hold Feature"
+                FontSize="25"
+            />
+            <TextBlock
+                Text="Der kan holdes når man ikke lige har vundet, lige har "
+                FontSize="15"
+            />
+            <TextBlock
+                Text="holdt, eller imens der et spil igang. "
+                FontSize="15"
+            />
+            <TextBlock
+                Text="Der kan holdes på maks to rækker af gangen. "
+                FontSize="15"
+            />
+            <TextBlock
+                Text="For at holde så klik på de tre knapper i bunden. "
+                FontSize="15"
+            />
+            <TextBlock
+                Text="Gevinster"
+                FontSize="25"
+            />
+            <TextBlock
+                Text="Gevinster kan ses til højre skal matche billedet før de"
+                FontSize="15"
+            />
+            <TextBlock
+                Text="r udbetales gevinst. "
+                FontSize="15"
+            />
+            <TextBlock
+                Text="Chancer for de forskellige gevinster kan ses på chan"
+                FontSize="15"
+            />
+            <TextBlock
+                Text="cer siden, markeret med et procent tegn."
+                FontSize="15"
+            />
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBlock
+                Text="0.4x"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="1x"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="2x"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="3x"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="4x"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="10x"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="20x"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="100x"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+            />
+           
+
+        </StackPanel>
+
+    </Grid>
+</Window>

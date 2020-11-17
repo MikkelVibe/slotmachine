@@ -1,0 +1,19 @@
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\bin\Debug\Enarmet Tyveknægt.exe.config
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\bin\Debug\Enarmet Tyveknægt.exe
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\bin\Debug\Enarmet Tyveknægt.pdb
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.csprojAssemblyReference.cache
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\MainWindow.g.cs
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\App.g.cs
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt_MarkupCompile.cache
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt_MarkupCompile.lref
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\MainWindow.baml
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.g.resources
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet_Tyveknægt.Properties.Resources.resources
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.csproj.GenerateResource.cache
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.csproj.CoreCompileInputs.cache
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.exe
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.pdb
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Info.g.cs
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\Info.baml
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\chancer.g.cs
+E:\Enarmet Tyveknægt\Enarmet Tyveknægt\obj\Debug\chancer.baml

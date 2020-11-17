@@ -1,0 +1,78 @@
+﻿<Window x:Class="Enarmet_Tyveknægt.chancer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Enarmet_Tyveknægt"
+        mc:Ignorable="d"
+        Title="Chancer" Height="450" Width="400">
+    <Window.Resources>
+        <BitmapImage x:Key="infoting" UriSource="images\infoting.png"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Source="{StaticResource infoting}" Grid.Column="1"/>
+        <StackPanel>
+            <TextBlock
+                Text="Chance 24%"
+                FontSize="25"
+                Height="36"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="Chance 5.8%"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="Chance 1.4%"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="Chance 1%"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="Chance 0.7%"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="Chance 0.5%"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="Chance 0.2%"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+            <TextBlock
+                Text="Chance 0.03%"
+                FontSize="25"
+                Height="39"
+                Margin="0,7"
+                TextAlignment="Center"
+            />
+        </StackPanel>
+    </Grid>
+</Window>
