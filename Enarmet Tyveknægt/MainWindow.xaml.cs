@@ -19,12 +19,11 @@ namespace Enarmet_Tyveknægt
         public bool isIngame = false;
 
         public int bet = 5; // Default bet mængde
-        public int spin = 40; // Antal gange der skal cycles igennem billeder før den stopper
         public double balance; // Ens balance
         #endregion
 
         #region Object setup
-        LessThanTwo LessThanTwo = new LessThanTwo();
+        LessThanTwo LessThanTwo = new LessThanTwo(); //Constructor.
         WinChecker win;
         chance check;
         Random rng = new Random();
@@ -36,12 +35,13 @@ namespace Enarmet_Tyveknægt
         #endregion
 
         #region Play
-        // Async Task for Play(); som er animationerne og selve gameplayet
+        // Async Task for Play(); som er animationerne og selve gameplayet. Det betyder at processoren bruger flere threads, så man kan køre forskellige processer på samme tid og lukke nogen uden at lukke hele programmet.
         private async Task Play() // Den er async Task for at det er muligt at lave et delay til animationerne. Hvis denne metode ikke har async task så ville der ikke være behov for at skrive "await" i metoden over.
         {
             int delay = 30;
+            int spin = 40; // Antal gange der skal cycles igennem billeder før den stopper
 
-            isIngame = true; // Sætter boolen IsIngame til at være true som betyder at der ikke kan holdes.
+            isIngame = true; // Sætter boolen IsIngame til at være true som betyder at der ikke kan holdes. Du er i gang med at spinne.
 
             balance -= bet;
             balancee.Text = "Balance: " + balance + " DKK";
@@ -185,6 +185,7 @@ namespace Enarmet_Tyveknægt
             {
                 balance += win.WinCheck() * bet; // Tilføjer gevinst til balance da WinCheck() returner gevinst X.
                 balancee.Text = "Balance: " + balance + " DKK";
+                gevinst = true;
             }
             else { gevinst = false; }
             #endregion
@@ -225,7 +226,7 @@ namespace Enarmet_Tyveknægt
         //Dette Click event kører når der klikkes på en hold knap.
         private void hold_Click(object sender, RoutedEventArgs e)
         {
-            // Sætter hold1-3 til hold1-3 i klassen LessThanTwo.cs så billederne kan bruges der.
+            // Sætter hold1 - 3 til hold1 - 3 i klassen LessThanTwo.cs så billederne kan bruges der.
             LessThanTwo.hold1 = hold1;
             LessThanTwo.hold2 = hold2;
             LessThanTwo.hold3 = hold3;
@@ -311,14 +312,14 @@ namespace Enarmet_Tyveknægt
         // Åbner info siden når der klikkes på info knappen
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-            Info infowindow = new Info(); // Laver et object ud fra Info
+            Info infowindow = new Info(); // Laver et objekt ud fra Info
 
             infowindow.Show();
         }
         // Åbner chancer siden når der klikke på chance knappen
         private void Chancer_Click(object sender, RoutedEventArgs e)
         {
-            chancer chancerWindow = new chancer(); // Laver et object ud fra chancer
+            chancer chancerWindow = new chancer(); // Laver et objekt ud fra chancer
 
             chancerWindow.Show();
         }
@@ -328,7 +329,6 @@ namespace Enarmet_Tyveknægt
         // De her to knapper ændre bet i forhold til hvad der klikke på
         private void plus_Click(object sender, RoutedEventArgs e)
         {
-            bett.Text = "Current bet: " + bet;
             bet++;
             bett.Text = "Current bet: " + bet;
         }
@@ -336,12 +336,16 @@ namespace Enarmet_Tyveknægt
         {
             if (bet > 1) // her sikres der at der ikke bliver bettet under 1 da det vil give problemer i programmet hvis der bettes med 0 eller minus tal.
             {
-                bett.Text = "Current bet: " + bet;
                 bet--;
                 bett.Text = "Current bet: " + bet;
             }
         }
         #endregion
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Info info = new Info();
+            info.Show();
+        }
     }
 }

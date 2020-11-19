@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Enarmet_Tyveknægt"
         mc:Ignorable="d"
-        Title="Slot Machine" Height="850" Width="600">
-
+        Title="Slot Machine" Height="850" Width="600"
+        Loaded="Window_Loaded"
+        >
+    
     <Window.Resources>
         <!--Alle billeder-->
         <BitmapImage x:Key="40%" UriSource="images\kirse.jpg"/>
@@ -95,7 +97,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <!--2x2 Grid inden i et grid ved A0-->
+        <!--2x2 Grid inden i main grid, øverst til højre.-->
         <Grid Grid.Column="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -108,7 +110,7 @@
 
             <!--Knapper inden i 2x2 grid for at kunne tilføje penge-->
             <Button Style="{StaticResource MyButtonStyle}" VerticalAlignment="Center" Click="one_Click">
-                <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center" Height="70"/>
+                <TextBlock Text="1" VerticalAlignment="Center" HorizontalAlignment="Center" Height="69"/>
             </Button>
 
             <Button Style="{StaticResource MyButtonStyle}" VerticalAlignment="Center" Grid.Row="1" Click="ten_Click" RenderTransformOrigin="0.487,0.018">
@@ -123,7 +125,7 @@
                 <TextBlock Text="20" VerticalAlignment="Center" HorizontalAlignment="Center" Height="69"/>
             </Button>
         </Grid>
-        <!--2x2 Grid inden i main grid-->
+        <!--2x2 Grid inden i main grid, øverst til venstre.-->
         <Grid Grid.Column="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>

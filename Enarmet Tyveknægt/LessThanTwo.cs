@@ -9,8 +9,8 @@ namespace Enarmet_Tyveknægt
     class LessThanTwo
     {
         // Hex koder til farver
-        public string red = "#ffaf2d2d";
-        public string normal = "#798190";
+        public string red = "#ffaf2d2d"; //Rød
+        public string normal = "#798190"; //Grå 
 
         // De tre knapper der er i brug. Disse skal defineret i MainWindow fordi MainWindow ikke har adgang til denne klasse
         public Button hold1;

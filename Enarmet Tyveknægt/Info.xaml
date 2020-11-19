@@ -26,8 +26,20 @@
                 FontSize="15"
             />
             <TextBlock
+                Text="Dette gres ved at bruge plus og minus knapperne."
+                FontSize="15"
+            />
+            <TextBlock
+                Text=""
+                FontSize="8"
+            />
+            <TextBlock
                 Text="Klik på loop symbolet for at auto-spille."
                 FontSize="15"
+            />
+            <TextBlock
+                Text=""
+                FontSize="8"
             />
             <TextBlock
                 Text="Klik på procent symbolet for at se chancer."
@@ -58,19 +70,19 @@
                 FontSize="25"
             />
             <TextBlock
-                Text="Gevinster kan ses til højre skal matche billedet før de"
+                Text="Gevinster kan ses til højre skal matche billedet før"
                 FontSize="15"
             />
             <TextBlock
-                Text="r udbetales gevinst. "
+                Text="der udbetales gevinst. "
                 FontSize="15"
             />
             <TextBlock
-                Text="Chancer for de forskellige gevinster kan ses på chan"
+                Text="Chancer for de forskellige gevinster kan ses på"
                 FontSize="15"
             />
             <TextBlock
-                Text="cer siden, markeret med et procent tegn."
+                Text="chancer siden, markeret med et procent tegn."
                 FontSize="15"
             />
         </StackPanel>
@@ -130,9 +142,6 @@
                 Height="39"
                 Margin="0,7"
             />
-           
-
         </StackPanel>
-
     </Grid>
 </Window>

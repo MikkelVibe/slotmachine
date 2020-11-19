@@ -32,7 +32,6 @@ namespace Enarmet_Tyveknægt
             {
                 return 20;
             }
-
             else if (main.four.Source == (ImageSource)main.Resources[VeryRare] && main.five.Source == (ImageSource)main.Resources[VeryRare] && main.six.Source == (ImageSource)main.Resources[VeryRare]) // Giver 10x gevinst
             {
                 return 10;
