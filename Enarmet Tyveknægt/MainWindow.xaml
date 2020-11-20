@@ -29,8 +29,8 @@
             <Setter Property="FontSize" Value="65"/>
             <Setter Property="Content" Value=""/>
             <Setter Property="FontFamily" Value="Corsiva"/>
-            <Setter Property="Background" Value="#798190"/>
-            <Setter Property="Foreground" Value="#1a2139"/>
+            <Setter Property="Background" Value="#A4A9AD"/>
+            <Setter Property="Foreground" Value="#23001E"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -59,8 +59,8 @@
             <Setter Property="FontSize" Value="65"/>
             <Setter Property="Content" Value=""/>
             <Setter Property="FontFamily" Value="Corsiva"/>
-            <Setter Property="Background" Value="#798190"/>
-            <Setter Property="Foreground" Value="#1a2139"/>
+            <Setter Property="Background" Value="#A4A9AD"/>
+            <Setter Property="Foreground" Value="#23001E"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -85,6 +85,7 @@
 
     <Grid>
         <!--Grid med 3x5-->
+		
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -138,14 +139,10 @@
 
             <!--3 knapper inden i 2x2 grid-->
             <!--Autospil knap-->
-            <Button Style="{StaticResource MyButtonStyle}" Name="auto"  Click="AutoSpil_Click" FontSize="40" Grid.Row="0" Grid.Column="0" >
-                <Image Source="{StaticResource auto}"/>
-            </Button>
+            <Button Style="{StaticResource MyButtonStyle}" Name="auto" Content="Auto" Click="AutoSpil_Click" FontSize="30" Grid.Row="0" Grid.Column="0" />
 
             <!--Info knap-->
-            <Button Style="{StaticResource MyButtonStyle}"  FontSize="40" Grid.Row="0" Grid.Column="1" Click="Info_Click">
-                <Image Source="{StaticResource info}"/>
-            </Button>
+            <Button Style="{StaticResource MyButtonStyle}"  FontSize="40" Grid.Row="0" Grid.Column="1" Click="Info_Click" Content="Info" />
 
             <!--Chancer knap-->
             <Button Style="{StaticResource MyButtonStyle}"  FontSize="40" Grid.Row="1" Grid.Column="0" Click="Chancer_Click" >
@@ -175,45 +172,45 @@
         <Button Name="Spil" Content="Spil" Style="{StaticResource MyButtonStyle}" Click="Start_Click" Grid.Column="1" Grid.Row="0"/>
         
         <!--Balance text-->
-        <TextBlock TextAlignment="Center" Foreground="#1a2139" Name="balancee" Text="Balance: 0 DKK" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Column="1" Height="33" Margin="10,0,10,3" Width="177" />
+        <TextBlock TextAlignment="Center" Foreground="#23001E" Name="balancee" Text="Balance: 0 DKK" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Column="1" Height="33" Margin="10,0,10,3" Width="177" />
 
         <!--Current bet text-->
-        <TextBlock Foreground="#1a2139" Name="bett" Text="Current bet: 5" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Height="29" Margin="38,3,10,0" Width="149"  />
+        <TextBlock Foreground="#23001E" Name="bett" Text="Current bet: 5" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Height="29" Margin="38,3,10,0" Width="149"  />
 
         <!--Billeder med border så de er i centrum-->
-        <Border BorderBrush="#798190" BorderThickness="6" Grid.Column="0" Grid.Row="1">
+        <Border BorderBrush="#A4A9AD" BorderThickness="6" Grid.Column="0" Grid.Row="1">
             <Image Source="{StaticResource 5%}" x:Name="one" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 
-        <Border BorderBrush="#798190" BorderThickness="6" Grid.Column="1" Grid.Row="1">
+        <Border BorderBrush="#A4A9AD" BorderThickness="6" Grid.Column="1" Grid.Row="1">
             <Image Source="{StaticResource 5%}" x:Name="two" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 
-        <Border BorderBrush="#798190" BorderThickness="6" Grid.Column="2" Grid.Row="1">
+        <Border BorderBrush="#A4A9AD" BorderThickness="6" Grid.Column="2" Grid.Row="1">
             <Image Source="{StaticResource 5%}" x:Name="three" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 
-        <Border BorderBrush="#1a2139" BorderThickness="10" Grid.Column="0" Grid.Row="2">
+        <Border BorderBrush="#20A39E" BorderThickness="10" Grid.Column="0" Grid.Row="2">
             <Image Source="{StaticResource 2%}" x:Name="four" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 
-        <Border BorderBrush="#1a2139" BorderThickness="10" Grid.Column="1" Grid.Row="2">
+        <Border BorderBrush="#20A39E" BorderThickness="10" Grid.Column="1" Grid.Row="2">
             <Image Source="{StaticResource 2%}" x:Name="five" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 
-        <Border BorderBrush="#1a2139" BorderThickness="10" Grid.Column="2" Grid.Row="2">
+        <Border BorderBrush="#20A39E" BorderThickness="10" Grid.Column="2" Grid.Row="2">
             <Image Source="{StaticResource 2%}" x:Name="six" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 
-        <Border BorderBrush="#798190" BorderThickness="6" Grid.Column="0" Grid.Row="3">
+        <Border BorderBrush="#A4A9AD" BorderThickness="6" Grid.Column="0" Grid.Row="3">
             <Image Source="{StaticResource 5%}" x:Name="seven" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 
-        <Border BorderBrush="#798190" BorderThickness="6" Grid.Column="1" Grid.Row="3">
+        <Border BorderBrush="#A4A9AD" BorderThickness="6" Grid.Column="1" Grid.Row="3">
             <Image Source="{StaticResource 5%}" x:Name="eight" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 
-        <Border BorderBrush="#798190" BorderThickness="6" Grid.Column="2" Grid.Row="3">
+        <Border BorderBrush="#A4A9AD" BorderThickness="6" Grid.Column="2" Grid.Row="3">
             <Image Source="{StaticResource 5%}" x:Name="nine" RenderTransformOrigin="0.526,0.964"/>
         </Border>
 

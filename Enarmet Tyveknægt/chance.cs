@@ -23,7 +23,7 @@ namespace Enarmet_Tyveknægt
         {
             this.main = main;
         }
-        public void Chancer(Image i) // Metoden for Chancer tager billeder ind som i og bruger dem til at ændre på det 3x3 grid med billeder.
+        private void Chancer(Image i) // Metoden for Chancer tager billeder ind som i og bruger dem til at ændre på det 3x3 grid med billeder.
         {
             int random = rng.Next(1, 101);
             if (random <= 24) //24% Chance
@@ -51,5 +51,20 @@ namespace Enarmet_Tyveknægt
                 i.Source = (ImageSource)main.Resources[Legendary];
             }
         }
+        public async Task Animationer(Image[] images)
+        {
+            int spin = 40; // Antal gange der skal cycles igennem billeder før den stopper
+            int delay = 40;
+
+            for (int i = 0; i < spin; i++) // Et for loop som står for selve animationen samt tilfældigheden
+            {
+                foreach (Image e in images)
+                {
+                    Chancer(e); // Kalder chancer funktionen og tager alle knapperne som input
+                }
+            await Task.Delay(delay); //Laver et delay
+            }
+        }
+
     }
 }
