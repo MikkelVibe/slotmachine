@@ -58,11 +58,12 @@ namespace Enarmet_Tyveknægt
 
             for (int i = 0; i < spin; i++) // Et for loop som står for selve animationen samt tilfældigheden
             {
+                await Task.Delay(delay); //Laver et delay
+
                 foreach (Image e in images)
                 {
                     Chancer(e); // Kalder chancer funktionen og tager alle knapperne som input
                 }
-            await Task.Delay(delay); //Laver et delay
             }
         }
 

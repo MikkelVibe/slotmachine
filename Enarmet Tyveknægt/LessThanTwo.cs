@@ -10,9 +10,9 @@ namespace Enarmet_Tyveknægt
     {
         // Hex koder til farver
         public string red = "#ffaf2d2d"; //Rød
-        public string normal = "#798190"; //Grå 
+        public string normal = "#A4A9AD"; // Normal farve
 
-        // De tre knapper der er i brug. Disse skal defineret i MainWindow fordi MainWindow ikke har adgang til denne klasse
+        // De tre hold knapper som skal defineres fordi de ikke har en constructor som har adgang til MainWindow.xaml
         public Button hold1;
         public Button hold2;
         public Button hold3;

@@ -5,46 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Enarmet_Tyveknægt"
         mc:Ignorable="d"
-        Title="Information" Height="450" Width="600">
+        Title="Information" Height="600" Width="612">
     <Window.Resources>
         <BitmapImage x:Key="infoting" UriSource="images\infoting.png"/>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition   Width="350"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
-        <Image Source="{StaticResource infoting}" Grid.Column="2"/>
+        <Image Source="{StaticResource infoting}" Grid.Column="2" Margin="0,0,0,141"/>
         <StackPanel Grid.Column="0">
             <TextBlock
                 Text="Generel information"
                 FontSize="25"
             />
-            <TextBlock
-                Text="Spilleren bestemmer selv hvad han vil satse."
+            <!--Kilde https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-a-multiline-textbox-control?view=netframeworkdesktop-4.8-->
+            <TextBox 
+                Name="tbMultiLine"
+                TextWrapping="Wrap"
+                AcceptsReturn="True"
+                VerticalScrollBarVisibility="Visible"
                 FontSize="15"
-            />
-            <TextBlock
-                Text="Dette gres ved at bruge plus og minus knapperne."
-                FontSize="15"
-            />
-            <TextBlock
-                Text=""
-                FontSize="8"
-            />
-            <TextBlock
-                Text="Klik på loop symbolet for at auto-spille."
-                FontSize="15"
-            />
-            <TextBlock
-                Text=""
-                FontSize="8"
-            />
-            <TextBlock
-                Text="Klik på procent symbolet for at se chancer."
-                FontSize="15"
-            />
+                >
+                Spilleren bestemmer selv hvad han vil satse.
+                Dette gøres ved at bruge af plus og minus knapperne.
+                Klik på loop symbolet for at auto-spille.
+                Klik på procent symbolet for at se chancer.
+                Klik på de fire knapper i toppen til venstre for at tilføje penge
+            </TextBox>
             <TextBlock
                 Text="Hold Feature"
                 FontSize="25"

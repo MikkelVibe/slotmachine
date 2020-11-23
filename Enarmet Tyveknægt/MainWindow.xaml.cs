@@ -18,6 +18,7 @@ namespace Enarmet_Tyveknægt
         public bool ligeHold = false;
         public bool isIngame = false;
 
+        // De tre holdknapper som tjekker om de er aktive
         public bool hhold1 = false;
         public bool hhold2 = false;
         public bool hhold3 = false;
@@ -27,9 +28,9 @@ namespace Enarmet_Tyveknægt
         #endregion
 
         #region Object setup
-        LessThanTwo LessThanTwo = new LessThanTwo(); //Constructor.
-        Random rng = new Random();
-        public MainWindow() // Constructor til WinChecker og chance. Det laves således for at give disse klasser adgang til MainWindow resources samt MainWindow knapper, billeder osv.
+        LessThanTwo LessThanTwo = new LessThanTwo(); //Constructor for LessThanTwo  
+        Random rng = new Random(); //Constructor for Random
+        public MainWindow() // Constructor til WinChecker og chance. Det laves således for at give disse klasser adgang til MainWindow ressourcer samt MainWindow knapper, billeder osv.
         {
             win = new WinChecker(this);
             check = new chance(this);
@@ -41,7 +42,7 @@ namespace Enarmet_Tyveknægt
         #endregion
 
         #region Start knap
-        private async void Start_Click(object sender, RoutedEventArgs e)
+        private async void Start_Click(object sender, RoutedEventArgs e) // Click event når start knappen klikkes
         {
             while (IsAutoOn && balance >= bet) //Hvis autoknappen er til og hvis der er nok penge i balance til at satse int bet så kører dette indtil denne betingelse ikke passer.
             {
@@ -73,7 +74,7 @@ namespace Enarmet_Tyveknægt
 
             Button button = sender as Button; // Sætter button til at være den knap der er blevet klikket på.
             BrushConverter bc = new BrushConverter();
-
+            
             if (((SolidColorBrush)button.Background).Color == (Color)ColorConverter.ConvertFromString(LessThanTwo.red)) //Gør baggrundsfarven af den knap der blev trykket på normal hvis den er rød
             {
                 button.Background = (Brush)bc.ConvertFrom(LessThanTwo.normal);
@@ -124,7 +125,7 @@ namespace Enarmet_Tyveknægt
             {
                 // Inden i dem alle sammen er dette.
                 Image[] images = { three, six, nine }; // Den laver en array med de knapper som skal ændre deres billede.
-                await check.Animationer(images);
+                await check.Animationer(images); // Denne metode laver animationerne
             }
             else if (hhold2 && hhold3) // Hvis både række 2 og 3 er holdt så sker dette
             {
@@ -178,7 +179,7 @@ namespace Enarmet_Tyveknægt
             {
                 balance += win.WinCheck() * bet; // Tilføjer gevinst til balance da WinCheck() returner gevinst X.
                 balancee.Text = "Balance: " + balance + " DKK";
-                gevinst = true;
+                gevinst = true; // Sætter gevinst til true så der ikke kan holdes lige efter
             }
             else { gevinst = false; }
             #endregion
@@ -269,7 +270,7 @@ namespace Enarmet_Tyveknægt
         }
         private void minus_Click(object sender, RoutedEventArgs e)
         {
-            if (bet > 1) // her sikres der at der ikke bliver bettet under 1 da det vil give problemer i programmet hvis der bettes med 0 eller minus tal.
+            if (bet > 1) // her sikres der at der ikke bliver bettet under 1, da det vil give problemer i programmet hvis der bettes med 0 eller minus tal.
             {
                 bet--;
                 bett.Text = "Current bet: " + bet;
