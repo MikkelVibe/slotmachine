@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Enarmet_Tyveknægt"
         mc:Ignorable="d"
-        Title="Information" Height="600" Width="612">
+        Title="Information" Height="636" Width="625">
     <Window.Resources>
         <BitmapImage x:Key="infoting" UriSource="images\infoting.png"/>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition   Width="350"/>
+            <ColumnDefinition Width="350"/>
             <ColumnDefinition Width="60"/>
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
-        <Image Source="{StaticResource infoting}" Grid.Column="2" Margin="0,0,0,141"/>
+        <Image Source="{StaticResource infoting}" Grid.Column="2" Margin="0,0,0,0"/>
         <StackPanel Grid.Column="0">
             <TextBlock
                 Text="Generel information"
@@ -23,114 +23,119 @@
             />
             <!--Kilde https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-a-multiline-textbox-control?view=netframeworkdesktop-4.8-->
             <TextBox 
-                Name="tbMultiLine"
+                Name="tbMultiLine1"
                 TextWrapping="Wrap"
                 AcceptsReturn="True"
-                VerticalScrollBarVisibility="Visible"
+                VerticalScrollBarVisibility="Disabled"
                 FontSize="15"
+                AcceptsTab="True"
                 >
-                Spilleren bestemmer selv hvad han vil satse.
-                Dette gøres ved at bruge af plus og minus knapperne.
-                Klik på loop symbolet for at auto-spille.
-                Klik på procent symbolet for at se chancer.
-                Klik på de fire knapper i toppen til venstre for at tilføje penge
+                Velkommen til vores slot machine. Dette er generel information.
+                For at komme tilbage til denne side, skal du klikke på info knappen
+                øverst til venstre. I denne app er der flere forskellige funktioner,
+                vi skal igennemem. Først og fremmest spiller du, ved at klikke på knappen
+                der hedder spil oppe i toppen. For at ændre hvor meget du vil satse, kan du
+                klikke på + og - lige under info. Men for at du skal kunne gøre dit bet større,
+                skal der nogle penge i maskinen. Dette gøres ved at bruge knapperne øverst til højre.
             </TextBox>
             <TextBlock
-                Text="Hold Feature"
+                Text="Hold funktion"
                 FontSize="25"
             />
-            <TextBlock
-                Text="Der kan holdes når man ikke lige har vundet, lige har "
+            <TextBox 
+                Name="tbMultiLine2"
+                TextWrapping="Wrap"
+                AcceptsReturn="True"
+                VerticalScrollBarVisibility="Disabled"
                 FontSize="15"
-            />
-            <TextBlock
-                Text="holdt, eller imens der et spil igang. "
-                FontSize="15"
-            />
-            <TextBlock
-                Text="Der kan holdes på maks to rækker af gangen. "
-                FontSize="15"
-            />
-            <TextBlock
-                Text="For at holde så klik på de tre knapper i bunden. "
-                FontSize="15"
-            />
+                AcceptsTab="True"
+                >
+                I dette spil er der en hold funktion. Hvis du lige har spillet, og du er tæt på
+                en gevinst, kan du holde op til to af dine symboler til næste runde. Dette gøres,
+                ved at bruge hold knapperne i bunden. Hvis du lige har holdt, kan du ikke bruge hold
+                knappen igen. Det samme gælder hvis du lige har fået gevinst.
+            </TextBox>
             <TextBlock
                 Text="Gevinster"
                 FontSize="25"
             />
-            <TextBlock
-                Text="Gevinster kan ses til højre skal matche billedet før"
+            <TextBox 
+                Name="tbMultiLine3"
+                TextWrapping="Wrap"
+                AcceptsReturn="True"
+                VerticalScrollBarVisibility="Disabled"
                 FontSize="15"
+                AcceptsTab="True"
+                >
+                Dette er en slot machine, så det skal selvfølgelig være muligt at vinde penge.
+                Ude til højre på denne skærm, kan du se hvor mange gange dit bet, du får igen, hvis
+                du vinder. Hvis du på spilskærmen klikker på procent-tegnet kan du se chancerne for at
+                få de enkelte symboler.
+            </TextBox>
+            <TextBlock
+                Text=""
+                FontSize="10"
             />
             <TextBlock
-                Text="der udbetales gevinst. "
-                FontSize="15"
-            />
-            <TextBlock
-                Text="Chancer for de forskellige gevinster kan ses på"
-                FontSize="15"
-            />
-            <TextBlock
-                Text="chancer siden, markeret med et procent tegn."
+                Text="Hyg dig med at miste alle dine penge ;D"
                 FontSize="15"
             />
         </StackPanel>
-        <StackPanel Grid.Column="1">
+        <StackPanel Grid.Column="1" Margin="0,78,0,0">
             <TextBlock
                 Text="0.4x"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,8.5"
                 TextAlignment="Center"
             />
             <TextBlock
                 Text="1x"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,8.5"
                 TextAlignment="Center"
             />
             <TextBlock
                 Text="2x"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,8.5"
                 TextAlignment="Center"
             />
             <TextBlock
                 Text="3x"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,8.5"
                 TextAlignment="Center"
             />
             <TextBlock
                 Text="4x"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,8.5"
                 TextAlignment="Center"
             />
             <TextBlock
                 Text="10x"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,9"
                 TextAlignment="Center"
             />
             <TextBlock
                 Text="20x"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,9"
                 TextAlignment="Center"
             />
             <TextBlock
                 Text="100x"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,9"
             />
         </StackPanel>
     </Grid>

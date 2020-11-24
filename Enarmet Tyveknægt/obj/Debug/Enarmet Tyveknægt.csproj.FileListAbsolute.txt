@@ -36,3 +36,22 @@ C:\Users\mikvc\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\
 C:\Users\mikvc\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.csproj.CoreCompileInputs.cache
 C:\Users\mikvc\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.exe
 C:\Users\mikvc\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.pdb
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\bin\Debug\Enarmet Tyveknægt.exe.config
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\bin\Debug\Enarmet Tyveknægt.exe
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\bin\Debug\Enarmet Tyveknægt.pdb
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.csprojAssemblyReference.cache
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\chancer.g.cs
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Info.g.cs
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\MainWindow.g.cs
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\App.g.cs
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt_MarkupCompile.cache
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt_MarkupCompile.lref
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\chancer.baml
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Info.baml
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\MainWindow.baml
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.g.resources
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet_Tyveknægt.Properties.Resources.resources
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.csproj.GenerateResource.cache
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.csproj.CoreCompileInputs.cache
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.exe
+C:\Users\simo0\Source\Repos\MikkelVibe\slotmachine\Enarmet Tyveknægt\obj\Debug\Enarmet Tyveknægt.pdb

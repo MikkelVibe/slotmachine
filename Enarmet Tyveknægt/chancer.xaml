@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Enarmet_Tyveknægt"
         mc:Ignorable="d"
-        Title="Chancer" Height="450" Width="400">
+        Title="Chancer" Height="450" Width="290">
     <Window.Resources>
-        <BitmapImage x:Key="infoting" UriSource="images\infoting.png"/>
+        <BitmapImage x:Key="infoting" UriSource="images\Symboler.png"/>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -18,59 +18,46 @@
         <Image Source="{StaticResource infoting}" Grid.Column="1"/>
         <StackPanel>
             <TextBlock
-                Text="Chance 24%"
+                Text="24% chance"
                 FontSize="25"
-                Height="36"
-                Margin="0,7"
+                Height="39"
+                Margin="0,16"
                 TextAlignment="Center"
             />
             <TextBlock
-                Text="Chance 5.8%"
+                Text="21% chance"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,15
+                "
                 TextAlignment="Center"
             />
             <TextBlock
-                Text="Chance 1.4%"
+                Text="19% chance"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,16"
                 TextAlignment="Center"
             />
             <TextBlock
-                Text="Chance 1%"
+                Text="17% chance"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,16"
                 TextAlignment="Center"
             />
             <TextBlock
-                Text="Chance 0.7%"
+                Text="12% chance"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
+                Margin="0,16"
                 TextAlignment="Center"
             />
             <TextBlock
-                Text="Chance 0.5%"
+                Text="7% chance"
                 FontSize="25"
                 Height="39"
-                Margin="0,7"
-                TextAlignment="Center"
-            />
-            <TextBlock
-                Text="Chance 0.2%"
-                FontSize="25"
-                Height="39"
-                Margin="0,7"
-                TextAlignment="Center"
-            />
-            <TextBlock
-                Text="Chance 0.03%"
-                FontSize="25"
-                Height="39"
-                Margin="0,7"
+                Margin="0,16"
                 TextAlignment="Center"
             />
         </StackPanel>

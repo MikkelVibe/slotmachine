@@ -286,5 +286,4 @@ namespace Enarmet_Tyveknægt
         }
         #endregion
     }
-
 }
