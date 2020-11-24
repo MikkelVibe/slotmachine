@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Enarmet_Tyveknægt"
         mc:Ignorable="d"
-        Title="Information" Height="636" Width="625">
+        Title="Information" Height="676" Width="625">
     <Window.Resources>
         <BitmapImage x:Key="infoting" UriSource="images\infoting.png"/>
     </Window.Resources>
@@ -37,6 +37,8 @@
                 der hedder spil oppe i toppen. For at ændre hvor meget du vil satse, kan du
                 klikke på + og - lige under info. Men for at du skal kunne gøre dit bet større,
                 skal der nogle penge i maskinen. Dette gøres ved at bruge knapperne øverst til højre.
+                Hvis du gerne vil spille, men ikke har tid til at være ved maskinen, er der en auto
+                funktion. Denne kan findes øverst til venstre.
             </TextBox>
             <TextBlock
                 Text="Hold funktion"
@@ -81,7 +83,7 @@
                 FontSize="15"
             />
         </StackPanel>
-        <StackPanel Grid.Column="1" Margin="0,78,0,0">
+        <StackPanel Grid.Column="1" Margin="0,98,0,0">
             <TextBlock
                 Text="0.4x"
                 FontSize="25"
