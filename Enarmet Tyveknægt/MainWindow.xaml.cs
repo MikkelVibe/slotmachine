@@ -97,7 +97,7 @@ namespace Enarmet_Tyveknægt
         private void AutoSpil_Click(object sender, RoutedEventArgs e)
         {
             BrushConverter bc = new BrushConverter();
-            if (IsAutoOn) // Hvis autoknappen allerede er på så slår den fra og ændre farve til normal
+            if (IsAutoOn && !isIngame) // Hvis autoknappen allerede er på så slår den fra og ændre farve til normal
             {
                 IsAutoOn = false;
                 auto.Background = (Brush)bc.ConvertFrom(LessThanTwo.normal);
