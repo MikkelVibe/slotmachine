@@ -202,7 +202,9 @@ namespace Enarmet_Tyveknægt
             if (((SolidColorBrush)hold1.Background).Color == (Color)ColorConverter.ConvertFromString(LessThanTwo.red) || ((SolidColorBrush)hold2.Background).Color == (Color)ColorConverter.ConvertFromString(LessThanTwo.red) || ((SolidColorBrush)hold3.Background).Color == (Color)ColorConverter.ConvertFromString(LessThanTwo.red))
             {
                 ligeHold = true;
-                BrushConverter bc = new BrushConverter(); // Der laves ny BrushConverter() da jeg arbejder med Hex koder som ikke er programmeret default som white, black osv.
+
+                BrushConverter bc = new BrushConverter(); // Der laves ny BrushConverter() da der arbejderes med Hex koder som ikke er programmeret default ligesom white, black osv.
+
                 hold1.Background = (Brush)bc.ConvertFrom(LessThanTwo.normal);
                 hold2.Background = (Brush)bc.ConvertFrom(LessThanTwo.normal);
                 hold3.Background = (Brush)bc.ConvertFrom(LessThanTwo.normal);
