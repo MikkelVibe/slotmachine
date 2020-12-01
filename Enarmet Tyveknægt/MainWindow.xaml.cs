@@ -180,8 +180,21 @@ namespace Enarmet_Tyveknægt
                 balance += win.WinCheck() * bet; // Tilføjer gevinst til balance da WinCheck() returner gevinst X.
                 balancee.Text = "Balance: " + balance + " DKK";
                 gevinst = true; // Sætter gevinst til true så der ikke kan holdes lige efter
+                BrushConverter bc = new BrushConverter();
+
+                Spil.Background = (Brush)bc.ConvertFrom("#00ff00");
+                await Task.Delay(500);
+                Spil.Background = (Brush)bc.ConvertFrom(LessThanTwo.normal);
             }
-            else { gevinst = false; }
+            else
+            {
+                BrushConverter bc = new BrushConverter();
+
+                Spil.Background = (Brush)bc.ConvertFrom(LessThanTwo.red);
+                await Task.Delay(500);
+                Spil.Background = (Brush)bc.ConvertFrom(LessThanTwo.normal);
+                gevinst = false;
+            }
             #endregion
 
             #region Reset af knapper
