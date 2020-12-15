@@ -24,7 +24,7 @@ namespace Enarmet_Tyveknægt
         public bool hhold3 = false;
 
         public int bet = 5; // Default bet mængde
-        public float balance; // Ens balance
+        public double balance; // Ens balance
         #endregion
 
         #region Object setup
